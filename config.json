@@ -4,6 +4,7 @@
   "output_csv": "outputs/market_edge.csv",
   "station_timezone": "Asia/Shanghai",
   "cutoff_hour": 10,
+  "cutoff_hours": [6, 8, 10, 12, 14, 16],
   "min_train_days": 120,
   "n_estimators": 500,
   "random_state": 42,
