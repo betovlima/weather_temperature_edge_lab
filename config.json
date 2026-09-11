@@ -1,0 +1,10 @@
+{
+  "weather_csv": "data/weather_hourly.csv",
+  "market_csv": "data/market_odds.csv",
+  "output_csv": "outputs/market_edge.csv",
+  "cutoff_hour": 10,
+  "min_train_days": 120,
+  "n_estimators": 500,
+  "random_state": 42,
+  "progress_every": 25
+}
