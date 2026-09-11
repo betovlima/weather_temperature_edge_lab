@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import time
+import warnings
 from dataclasses import dataclass
 
 import numpy as np
@@ -11,6 +12,14 @@ from sklearn.impute import SimpleImputer
 from sklearn.metrics import mean_absolute_error
 
 logger = logging.getLogger(__name__)
+
+warnings.filterwarnings(
+    "ignore",
+    message=r"`sklearn\.utils\.parallel\.delayed` should be used with `sklearn\.utils\.parallel\.Parallel`.*",
+    category=UserWarning,
+    module=r"sklearn\.utils\.parallel",
+)
+
 AUDIT_COLUMNS = {
     "date", "target_tmax_c", "feature_cutoff_timestamp",
     "last_observation_used", "actual_tmax_timestamp",
