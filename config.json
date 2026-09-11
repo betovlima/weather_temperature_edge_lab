@@ -2,6 +2,7 @@
   "weather_csv": "data/weather_hourly.csv",
   "market_csv": "data/market_odds.csv",
   "output_csv": "outputs/market_edge.csv",
+  "station_timezone": "Asia/Shanghai",
   "cutoff_hour": 10,
   "min_train_days": 120,
   "n_estimators": 500,
