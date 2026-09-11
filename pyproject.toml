@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "weather-temperature-edge-lab"
+version = "0.1.0"
+description = "Probabilistic daily maximum temperature forecasting and backtesting using historical weather data, walk-forward validation, and market edge analysis."
+authors = ["Roberto"]
+readme = "README.md"
+packages = [{ include = "weather_temperature_edge_lab", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+pandas = ">=2.2"
+numpy = ">=1.26"
+scikit-learn = ">=1.5"
+matplotlib = ">=3.8"
+requests = ">=2.32"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0"
+
+[tool.poetry.scripts]
+weather-download = "weather_temperature_edge_lab.download_weather:main"
+weather-backtest = "weather_temperature_edge_lab.run_experiment:main"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
