@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+outputs/*.csv
+outputs/*.png
+data/weather_hourly.csv
