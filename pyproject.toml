@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "weather-temperature-edge-lab"
-version = "0.1.0"
+version = "0.2.0"
 description = "Probabilistic daily maximum temperature forecasting and backtesting using historical weather data, walk-forward validation, and market edge analysis."
 authors = ["Roberto"]
 readme = "README.md"
